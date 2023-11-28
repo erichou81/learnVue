@@ -1,0 +1,452 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .left,
+      .right {
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .middle {
+        width: 40%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+        /*背景绿色*/    
+
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">Left Content</div>
+      <div class="middle">Middle Content</div>
+      <div class="right">Right Content</div>
+    </div>
+    <div class="clearfix"></div>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>F布局示例</title>
+   <style>
+       .container {
+           display: flex;
+           flex-direction: column;
+           height: 100vh;
+       }
+       .header {
+           background-color: lightblue;
+           padding: 20px;
+           text-align: center;
+       }
+       .content {
+           background-color: lightgreen;
+           padding: 20px;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <div class="header">
+           <h1>F布局示例</h1>
+       </div>
+       <div class="content">
+           <p>这里是F布局的下部分，用于显示主要内容。</p>
+       </div>
+   </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Z布局示例</title>
+  <style>
+      .container {
+          display: flex;
+          flex-direction: column-reverse;
+          height: 100vh;
+      }
+      .header {
+          background-color: lightblue;
+          padding: 20px;
+          text-align: center;
+      }
+      .content {
+          background-color: lightgreen;
+          padding: 20px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+          <h1>Z布局示例</h1>
+      </div>
+      <div class="content">
+          <p>这里是Z布局的下部分，用于显示主要内容。</p>
+      </div>
+  </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>杂志版式布局示例</title>
+ <style>
+     .container {
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+     }
+     .cover {
+         background-color: lightblue;
+         padding: 20px;
+         text-align: center;
+     }
+     .toc {
+         background-color: lightgreen;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+     }
+     .toc-item {
+         margin-bottom: 20px;
+     }
+     .article {
+         background-color: lightyellow;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+     }
+     .advertisement {
+         background-color: lightcoral;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+     }
+ </style>
+</head>
+<body>
+ <div class="container">
+     <div class="cover">
+         <h1>杂志版式布局示例</h1>
+     </div>
+     <div class="toc">
+         <h2>目录</h2>
+         <div class="toc-item">
+            <a href="#">文章1</a>
+         </div>
+         <div class="toc-item">
+            <a href="#">文章2</a>
+         </div>
+         <div class="toc-item">
+            <a href="#">文章3</a>
+         </div>
+     </div>
+     <div class="article">
+         <h2>文章1</h2>
+         <p>这里是文章1的内容。</p>
+     </div>
+     <div class="advertisement">
+         <h2>广告</h2>
+         <p>这里是广告的内容。</p>
+     </div>
+ </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>单页布局示例</title>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+    }
+    .content {
+        background-color: lightgreen;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        background-color: lightyellow;
+        padding: 20px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>单页布局示例</h1>
+    </div>
+    <div class="content">
+        <h2>页面内容</h2>
+        <p>这里是页面内容。</p>
+    </div>
+    <div class="sidebar">
+        <h2>侧边栏</h2>
+        <p>这里是侧边栏内容。</p>
+    </div>
+</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>网格式布局示例</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        height: 100vh;
+      }
+      .item {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h2>网格项1</h2>
+        <p>这里是网格项1的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项2</h2>
+        <p>这里是网格项2的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项3</h2>
+        <p>这里是网格项3的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项4</h2>
+        <p>这里是网格项4的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+      <div class="item">
+        <h2>网格项5</h2>
+        <p>这里是网格项5的内容。</p>
+      </div>
+    </div>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>宝塔布局示例</title>
+<style>
+  .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+  }
+  .header {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+  }
+  .content {
+      background-color: lightgreen;
+      padding: 20px;
+  }
+  .footer {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+      <h1>宝塔布局示例</h1>
+  </div>
+  <div class="content">
+      <h2>页面内容</h2>
+      <p>这里是页面内容。</p>
+  </div>
+  <div class="footer">
+      <h2>底部footer</h2>
+      <p>这里是底部footer的内容。</p>
+  </div>
+</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>使用 Vue.js 的 HTML 示例</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+<div id="app">
+    <h1>{{ message }}</h1>
+</div>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!'
+  }
+});
+</script>
+</body>
+</html> -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <style>
+      .d2 {
+        width: 60px;
+        height: 40px;
+        background-color: pink;
+        display: inline-block;
+      }
+    </style>
+    <div id="app" style="width: 250px; border: 1px solid red">
+      <a-div v-for="i in imgg" :im="i"></a-div>
+    </div>
+  </body>
+
+  <!--模板-->
+  <template id="a-id">
+    <div class="d2" v-on:click="s">
+      <p v-if="seen">Now you see me</p>
+      <img v-bind:src="im" style="height: 40px; width: 60px" v-if="show" />
+      <img v-bind:src="im" style="height: 40px; width: 60px" v-else />
+
+      <button @click="increment">{{ count }}</button>
+    </div>
+  </template>
+
+  <script type="text/javascript">
+    //import adiv from "./BattleroidLayout.vue";
+    //vue自定义构建组件
+    Vue.component("a-div", {
+      //模板位置
+      template: "#a-id",
+      //父组件向子组件传递内容
+      props: ["im"],
+
+      data: function () {
+        return {
+          show: true,
+          seen: false,
+        };
+      },
+      //根据调用的方法v-on:click="s"和属性v-if="show"显示隐藏
+      methods: {
+        s: function () {
+          this.show = !this.show;
+        },
+      },
+    });
+    //Vue.component("adiv", adiv);
+    //const count = ref(0);
+
+    var app = new Vue({
+      el: "#app",
+      data: {
+        imgg: [
+          "images-BMW/宝马_01.gif",
+          "images-BMW/宝马_02.gif",
+          "images-BMW/宝马_03.gif",
+          "images-BMW/宝马_04.gif",
+          "images-BMW/宝马_05.jpg",
+          "images-BMW/宝马_06.gif",
+          "images-BMW/宝马_07.gif",
+          "images-BMW/宝马_08.gif",
+          "images-BMW/宝马_09.gif",
+          "images-BMW/宝马_10.gif",
+          "images-BMW/宝马_11.gif",
+          "images-BMW/宝马_12.gif",
+          "images-BMW/宝马_13.gif",
+          "images-BMW/宝马_14.gif",
+          "images-BMW/宝马_15.gif",
+          "images-BMW/宝马_16.gif",
+        ],
+      },
+      function: {
+        increment: function () {
+          count.value++;
+        },
+      },
+    });
+  </script>
+</html>
