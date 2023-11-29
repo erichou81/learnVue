@@ -1,6 +1,6 @@
 <script setup lang="ts">
 //  import HelloWorld from './components/HelloWorld.vue'
-import SearchResult from './components/SearchResult.vue'
+import SearchResult from "./components/SearchResult.vue";
 
 //create new component
 </script>
@@ -31,8 +31,4 @@ import SearchResult from './components/SearchResult.vue'
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
-
 </style>
-
-
-
