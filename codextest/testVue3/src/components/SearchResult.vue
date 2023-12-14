@@ -1,8 +1,17 @@
-<script setup lang="ts">
+<script setup>
+//setup lang="ts"
 // export default {
 //   name: "SearchResult",
 //   // 在这里添加你的组件选项，例如 data, methods 等
 // };
+
+import { ref } from 'vue'
+
+const count = ref(0)
+
+function increment() {
+  count.value++
+}
 </script>
 
 <template>
@@ -13,6 +22,9 @@
   <a href="https://vitejs.dev" target="_blank">
     <img src="/vite.svg" class="logo" alt="Vite logo" />
   </a>
+  <button @click="increment">
+    {{ count }}
+  </button>
 </template>
 
 <style scoped>
