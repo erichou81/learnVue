@@ -20,7 +20,25 @@
   color: hwb(71 0% 0%);
 }
 </style>
-<script setup lang="ts">
+<script setup>
+import { ref,onMounted } from "vue";
+export default {
+  name: "SearchResult",
+  setup() {
+    let box = ref(null); //本质是reactive({value:null})
+    
+    // 需要在生命周期获取
+    onMounted(()=>{
+      // 当界面挂载出来后就会自动执行
+      console.log(box.value);
+    })
+    //接受的是null,原因是setup执行时机比mounted早,dom还没形成
+    console.log(box.value);
+    return { box };
+  },
+};
+</script>
+<!-- <script setup lang="ts">
 //setup lang="ts"
 // export default {
 //   name: "SearchResult",
@@ -112,20 +130,5 @@ onMounted(() => {
 // created() {
 //  console.log('count is: ' + this.count)
 // }
-</script>
-<!-- <script>
-import { ref,onMounted } from "vue";
-export default {
-  setup() {
-    let box = ref(null); //本质是reactive({value:null})
-    // 需要在生命周期获取
-    onMounted(()=>{
-      // 当界面挂载出来后就会自动执行
-      console.log(box.value);
-    })
-    //接受的是null,原因是setup执行时机比mounted早,dom还没形成
-    console.log(box.value);
-    return { box };
-  },
-};
 </script> -->
+
