@@ -9,9 +9,9 @@
   <button @click="increment">
     {{ count }}
   </button>
-  姓:<input v-model="Person.X" /><br />
+ <!-- 姓:<input v-model="Person.X" /><br />
   名:<input v-model="Person.M" /><br />
-  单向响应:<input v-model="Person.XM" />
+  单向响应:<input v-model="Person.XM" />-->
 </template>
 
 <style scoped>
@@ -26,7 +26,7 @@ export default {
   name: "SearchResult",
   setup() {
     let box = ref(null); //本质是reactive({value:null})
-    
+
     // 需要在生命周期获取
     onMounted(()=>{
       // 当界面挂载出来后就会自动执行
