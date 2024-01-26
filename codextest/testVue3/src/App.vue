@@ -1,5 +1,6 @@
-<script setup lang="ts">
+<script>
 //  import HelloWorld from './components/HelloWorld.vue'
+// setup lang="ts"
 import SearchResult from "./components/SearchResult.vue";
 
 //create new component

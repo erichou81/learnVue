@@ -3,15 +3,16 @@
     <!-- 在这里添加你的模板代码 -->
     <h5>h5标签</h5>
   </div>
-  <a href="https://vitejs.dev" target="_blank">
+  <a href= "https://vitejs.dev" target="_blank">
     <img src="/vite.svg" class="logo" alt="Vite logo" />
   </a>
   <button @click="increment">
     {{ count }}
   </button>
- <!-- 姓:<input v-model="Person.X" /><br />
+  <!-- 姓:<input v-model="Person.X" /><br />
   名:<input v-model="Person.M" /><br />
-  单向响应:<input v-model="Person.XM" />-->
+  单向响应:<input v-model="Person.XM" />
+    -->
 </template>
 
 <style scoped>
@@ -20,10 +21,15 @@
   color: hwb(71 0% 0%);
 }
 </style>
-<script setup>
-import { ref,onMounted } from "vue";
+<script>
+// import { ref,onMounted } from "vue";
 export default {
   name: "SearchResult",
+  data() {
+    return {
+      count :0
+    }
+  },
   setup() {
     let box = ref(null); //本质是reactive({value:null})
 
@@ -35,6 +41,14 @@ export default {
     //接受的是null,原因是setup执行时机比mounted早,dom还没形成
     console.log(box.value);
     return { box };
+  },
+  mounted() {
+    console.log("mounted");
+  },
+  methods: {
+    increment() {
+      this.count++;
+    },
   },
 };
 </script>
@@ -131,4 +145,3 @@ onMounted(() => {
 //  console.log('count is: ' + this.count)
 // }
 </script> -->
-
